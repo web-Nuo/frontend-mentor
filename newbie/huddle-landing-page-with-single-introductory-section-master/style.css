@@ -1,0 +1,190 @@
+/* 
+1. frontend mentor
+2. general settings
+3. layout
+4. media queries */
+
+/* 1. frontend mentor */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+}
+
+/* 2.general settings & typography */
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  background-color: hsl(257, 40%, 49%);
+  background-color: var(--violet);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 3vw, 4rem);
+  font-weight: 700;
+}
+
+a {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 3. layout */
+
+body {
+  background: var(--violet) url(/images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.5em 0;
+  text-align: left;
+}
+
+.company-logo {
+  width: min(45%, 10rem);
+}
+
+.main {
+  padding: 2em 0;
+}
+
+.main_title {
+  margin: 0;
+  margin: 2.2em 0 0.9em 0;
+}
+
+.main_text {
+  margin-bottom: 1.3em;
+}
+
+.main_link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--violet);
+  font-size: 0.8rem;
+  background-color: #fff;
+  padding: 0.8em 6em;
+  border-radius: 100px;
+  margin-bottom: 5em;
+  box-shadow: 0 5px 20px hsl(257, 40%, 35%);
+  transition: all 0.2s ease-in-out;
+}
+
+.main_link:hover,
+.main_link:focus {
+  box-shadow: 0 1px 20px hsl(257, 40%, 35%);
+  opacity: 0.8;
+}
+
+ion-icon {
+  padding: 0.5em;
+  border-radius: 50%;
+  border: 1.5px solid #fff;
+}
+
+ion-icon:hover {
+  opacity: 0.5;
+}
+
+.icon_link + .icon_link {
+  margin-left: 0.5em;
+}
+
+.icon_link {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* 4. media queries */
+
+@media (min-width: 800px) {
+  body {
+    background: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-color: var(--violet);
+    text-align: left;
+  }
+
+  .container {
+    width: 90%;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main_title,
+  .main_text,
+  .main_link {
+    margin: 0;
+  }
+
+  .left-col {
+    width: 55%;
+  }
+
+  .right-col {
+    width: 40%;
+  }
+
+  .main_title {
+    margin: 0.9em 0 0.4em 0;
+  }
+
+  .main_text {
+    margin-bottom: 1.1em;
+  }
+
+  .main_link {
+    padding: 1em 5em;
+  }
+  .icons {
+    margin-top: 2em;
+    text-align: right;
+  }
+}
