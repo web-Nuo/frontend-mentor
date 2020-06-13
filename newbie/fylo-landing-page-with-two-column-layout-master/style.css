@@ -145,7 +145,7 @@ button {
   display: block;
   border: none;
   color: #fff;
-  padding: 0.8em;
+  padding: 0.8em 1.5em;
   width: 100%;
   box-shadow: 1px 1px 10px hsl(224, 93%, 80%);
   transition: all 0.2s ease-in-out;
@@ -306,9 +306,9 @@ ion-icon {
   color: hsl(228, 45%, 44%);
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 670px) {
   .container {
-    max-width: 1400px;
+    max-width: 1200px;
     width: 90%;
   }
 
@@ -346,6 +346,10 @@ ion-icon {
   .bg-mobile {
     background-image: url(./images/bg-curve-desktop.svg);
     padding-top: 7.91666666666%;
+  }
+
+  .cta__button {
+    max-width: 45%;
   }
 
   .grid {
