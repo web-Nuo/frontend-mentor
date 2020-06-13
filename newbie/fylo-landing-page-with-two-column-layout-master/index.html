@@ -28,7 +28,7 @@
       </ul>
     </header>
     <main>
-      <section class="intro container">
+      <section class="intro container col">
         <div class="right-col">
           <img
             class="intro__img"
@@ -45,21 +45,26 @@
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <form action="#" method="get">
+          <form class="main-form" action="#" method="get">
             <label for="email"
               ><input
                 type="email"
                 name="email"
+                class="main-input"
                 id="email"
                 placeholder="Enter your email..."
             /></label>
-            <label for="button"><button id="button">Get Started</button></label>
+            <label for="button"
+              ><button class="main-button" id="button">
+                Get Started
+              </button></label
+            >
           </form>
         </div>
       </section>
       <div class="bg-mobile"></div>
       <section class="secondary">
-        <div class="container">
+        <div class="container col">
           <div class="right-col">
             <img
               class="main__img"
@@ -114,7 +119,7 @@
         </div>
       </section>
       <div class="cta-bg">
-        <section class="cta container">
+        <section class="cta container col">
           <div class="left-col">
             <h2 class="main__title">
               Get early access today
@@ -127,11 +132,11 @@
           </div>
           <div class="right-col">
             <form class="cta__form" action="#" method="get">
-              <label for="email">
+              <label for="mail">
                 <input
                   type="email"
-                  name="email"
-                  id="email"
+                  name="mail"
+                  id="mail"
                   placeholder="email@example.com"
                 />
               </label>
@@ -147,7 +152,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container grid">
         <img class="footer__logo" src="./images/logo - Copie.svg" alt="Fylo" />
         <ul class="footer__list">
           <li class="footer__item">
